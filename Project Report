@@ -1,0 +1,35 @@
+Poetry Pal (ノ＞▽＜。)ノ is a web-based interactive tool developed to assist users in finding rhyming words from a predefined dataset. 
+The concept blends a playful theme with practical programming fundamentals, making it both educational and engaging. 
+The application’s design centers around user-friendliness, 
+presenting a poetic backdrop alongside an input field and dynamic display elements that react in real-time to user interaction.
+
+At the heart of the application is the rhyme-finding functionality. When a user enters a word into the input field and clicks the “Find the rhyme” button,
+the application checks the word against a static rhyme database. If a match is found, a list of poetic rhymes is displayed in a clean,
+formatted layout beneath the input field. If no matches exist, the user receives a polite message informing them that no rhymes were found.
+This straightforward interaction makes the app ideal for younger users or creative writers seeking inspiration.
+
+Behind the scenes, several core computer science concepts are utilized. A queue structure (poeticwordQueue) stores user queries,
+ensuring each input is processed in the order it was received. This helps in managing user inputs asynchronously and simulates how input processing might work in real applications.
+Simultaneously, a dynamic array structure (decentStorage) keeps track of all words entered by the user. To present these entries in a consistent manner,
+the array is sorted using a manually implemented bubble sort algorithm, emphasizing understanding of fundamental sorting methods.
+
+The app also features a stack implementation (wordhistoryStack) that stores only the words that resulted in successful rhyme matches. 
+This mimics a "rhyme history" log, following a last-in-first-out (LIFO) order. All three structures—stack, queue,
+and array—are custom-built using JavaScript classes, highlighting object-oriented design principles and deepening the developer’s understanding of core data management.
+
+From a technical standpoint, the application uses HTML to structure the content, JavaScript for interactivity and logic, and basic DOM manipulation to display dynamic results.
+JavaScript’s EventListener functionality handles button clicks and input processing. Feedback is immediate, and results update live on the same page without requiring reloads,
+offering a smooth user experience.
+
+This project has achieved several successes. It effectively demonstrates how traditional data structures can be applied in creative,
+user-friendly applications. The interface is clean, responsive, and fun, and the rhyme database produces immediate results for supported words.
+Sorting user input and visually organizing data enhances usability, and the app structure serves as a strong foundation for future feature expansions.
+
+However, there are also areas that could be improved. The rhyme database is limited, so expanding it would make the app more useful. Additionally,
+incorporating audio feedback, such as reading the rhyme aloud or using subtle sound effects, could increase engagement. Finally,
+implementing more advanced rhyme-finding logic—such as phonetic similarity or API-driven databases—would elevate the app’s real-world usability.
+
+In conclusion, Poetry Pal is a lighthearted yet educational web tool that combines creative writing with technical execution.
+By showcasing real-world uses of queues, stacks, arrays, and sorting algorithms,
+it serves as a great example of how core computer science concepts can be applied in engaging ways.
+
